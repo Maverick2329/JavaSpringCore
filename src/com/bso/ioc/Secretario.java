@@ -8,4 +8,10 @@ public class Secretario implements IEmpleado {
 		return "Gestionar la agenda de los jefes";
 	}
 
+	@Override
+	public String getInforme() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

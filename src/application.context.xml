@@ -8,7 +8,13 @@ xsi:schemaLocation=" http://www.springframework.org/schema/beans
                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                      xmlns="http://www.springframework.org/schema/beans">
                      
- <bean id="Director" class="com.bso.ioc.Director"></bean>
+ <bean id="Informe" class ="com.bso.ioc.Informe"></bean>
+                     
+ <bean id="Director" class="com.bso.ioc.Director">
+ 	<constructor-arg ref="Informe"></constructor-arg>
+ </bean>
  <bean id="Secretario" class="com.bso.ioc.Secretario"></bean>
+ 
+ 
  
 </beans>

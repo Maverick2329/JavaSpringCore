@@ -14,6 +14,7 @@ public class Empleados {
 		
 		System.out.println(director.getTareas());
 		System.out.println(secretario.getTareas());
+		System.out.println(director.getInforme());
 		ctx.close();
 
 	}
