@@ -12,9 +12,10 @@ public class Empleados {
 		IEmpleado director = ctx.getBean("Director", IEmpleado.class);
 		IEmpleado secretario = ctx.getBean("Secretario", IEmpleado.class);
 		
-		System.out.println(director.getTareas());
-		System.out.println(secretario.getTareas());
-		System.out.println(director.getInforme());
+		//System.out.println(director.getTareas());
+		//System.out.println(secretario.getTareas());
+		System.out.println("Director->>>" + director.getInforme());
+		System.out.println("Secretario->>>" + secretario.getInforme());
 		ctx.close();
 
 	}

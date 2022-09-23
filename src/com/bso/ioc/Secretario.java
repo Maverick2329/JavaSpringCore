@@ -2,6 +2,15 @@ package com.bso.ioc;
 
 public class Secretario implements IEmpleado {
 
+	
+	private ICreacionInforme informeNuevo;
+	
+	
+	
+	public void setInformeNuevo(ICreacionInforme informeNuevo) {
+		this.informeNuevo = informeNuevo;
+	}
+
 	@Override
 	public String getTareas() {
 		// TODO Auto-generated method stub
@@ -11,7 +20,7 @@ public class Secretario implements IEmpleado {
 	@Override
 	public String getInforme() {
 		// TODO Auto-generated method stub
-		return null;
+		return this.informeNuevo.getInforme();
 	}
 
 }
